@@ -1,0 +1,259 @@
+:root {
+    --azulbebe: #b1d4e0;
+    --azul: #2e8bc0;
+    --azulmedio: #145da0;
+    --azulescuro: #0c2d48;
+    --cinza: #212121;
+    --cinzaclaro: #e0e0e0;
+    --preto: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.barra {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    padding-top: 20px;
+    background-color: var(--cinza);
+}
+
+.barra h1 {
+    display: block;
+    padding: 10px;
+    font-size: 40px;
+    border-style: outset;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--preto);
+    background-color: var(--azulbebe);
+}
+
+.barra ul {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.barra ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.barra ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-style: outset;
+    text-align: center;
+    text-decoration: solid;
+    color: var(--preto);
+    background-color: var(--azulbebe);
+    transition: background-color 0.7s;
+
+}
+
+.barra ul li a:hover {
+    color: var(--cinzaclaro);
+    background-color: var(--azulmedio);
+}
+
+.principal {
+    padding: 10px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+
+.principal h1 {
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: var(--preto);
+} 
+
+.principal p {
+    padding: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--preto);
+}
+
+.imagem {
+    padding: 5px;
+    margin-left: 300px;
+    background-color: var(--azulbebe);
+}
+
+.foto {
+    display: flex;
+    margin: auto;
+    width: 300px;
+    border-radius: 50px;
+}
+
+.sobremim {
+    padding: 50px;
+    margin-left: 300px;
+    background-color: var(--azulbebe);
+}
+
+.sobremim h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.sobremim p {
+    padding: 30px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: var(--cinzaclaro);
+    background-color: var(--cinza);
+    margin-bottom: 100px;
+}
+
+.formacao {
+    padding: 10px;
+    margin-left: 300px;
+    justify-content: center;
+    background-color: var(--azul);
+}
+
+.formacao h1 {
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: var(--preto);
+}
+
+.boxmaster {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 300px;
+    background-color: var(--azul);
+}
+
+.box {
+    width: 400px;
+    height: 220px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    background-color: var(--cinza);
+}
+
+.box h1 {
+    margin: center;
+    text-align: center;
+    font-size: 25px;
+    justify-content: auto;
+    color: var(--cinzaclaro);  
+}
+
+.box p {
+    font-size: 20px;
+    color: var(--cinzaclaro);
+    text-align: center;
+}
+
+.box li {
+    font-size: 20px;
+    color: var(--cinzaclaro);
+}
+
+.portifolio {
+    padding: 30px;
+    margin-left: 300px;
+    background-color: var(--azulmedio);
+}
+
+.portifolio h1 {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.portifoliomaster {
+    padding: 10px;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--azulmedio);
+}
+
+.linkedin {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+}
+
+.github { 
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+}
+
+.contato {
+    padding: 30px;
+    margin-left: 300px;
+    background-color: var(--azulescuro);
+    justify-content: center;
+}
+
+.contatomaster h1 {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+.contatoinformacoes p {
+    font-size: 35px;
+    color: var(--cinzaclaro);
+}
+.formulario {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+
+.formulario label {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--cinzaclaro);
+  }
+
+.formulario input {
+    height: 30px;
+    font-size: 20px;
+  }
+
+.mensagem {
+    width: 500px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+.botaoformulario {
+    padding: 15px 30px;
+    background-color: #141414;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+    text-transform: uppercase;
+    color: var(--cinzaclaro);
+    border-color: transparent;
+  }
+.botaoformulario:hover {
+    background-color: var(--cinzaclaro);
+    color: var(--preto);
+  }
