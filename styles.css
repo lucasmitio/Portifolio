@@ -53,7 +53,6 @@ body {
     color: var(--preto);
     background-color: var(--azulbebe);
     transition: background-color 0.7s;
-
 }
 
 .barra ul li a:hover {
@@ -72,7 +71,7 @@ body {
     font-size: 40px;
     text-align: center;
     color: var(--preto);
-} 
+}
 
 .principal p {
     padding: 30px;
@@ -132,12 +131,14 @@ body {
 .boxmaster {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-left: 300px;
     background-color: var(--azul);
 }
 
 .box {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 220px;
     padding: 10px;
     border-radius: 10px;
@@ -152,7 +153,7 @@ body {
     text-align: center;
     font-size: 25px;
     justify-content: auto;
-    color: var(--cinzaclaro);  
+    color: var(--cinzaclaro);
 }
 
 .box p {
@@ -183,6 +184,7 @@ body {
     margin-left: 300px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: var(--azulmedio);
 }
 
@@ -193,7 +195,7 @@ body {
     display: flex;
 }
 
-.github { 
+.github {
     width: 200px;
     height: 200px;
     margin: auto;
@@ -212,37 +214,40 @@ body {
     font-size: 40px;
     text-align: center;
 }
+
 .contatoinformacoes p {
     font-size: 35px;
     color: var(--cinzaclaro);
 }
+
 .formulario {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    width: 500px;
-  }
+    width: 100%;
+    max-width: 500px;
+}
 
 .formulario label {
     margin-top: 10px;
     font-size: 20px;
     color: var(--cinzaclaro);
-  }
+}
 
 .formulario input {
     height: 30px;
     font-size: 20px;
-  }
+}
 
 .mensagem {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 200px;
     font-size: 20px;
-  }
+}
 
 .botaoformulario {
     padding: 15px 30px;
-    background-color: #141414;
     display: inline-block;
     margin-top: 20px;
     border-radius: 10px;
@@ -250,10 +255,81 @@ body {
     cursor: pointer;
     transition: 0.7s;
     text-transform: uppercase;
-    color: var(--cinzaclaro);
     border-color: transparent;
-  }
+    color: var(--cinzaclaro);
+    background-color: var(--cinza);
+}
+
 .botaoformulario:hover {
     background-color: var(--cinzaclaro);
     color: var(--preto);
-  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .barra {
+        width: 200px;
+    }
+
+    .principal,
+    .imagem,
+    .sobremim,
+    .formacao,
+    .boxmaster,
+    .portifolio,
+    .portifoliomaster,
+    .contato {
+        margin-left: 200px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .barra {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .principal,
+    .imagem,
+    .sobremim,
+    .formacao,
+    .boxmaster,
+    .portifolio,
+    .portifoliomaster,
+    .contato {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .boxmaster,
+    .portifoliomaster {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .foto,
+    .linkedin,
+    .github {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .mensagem {
+        width: 100%;
+    }
+}
